@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "bootsnap", require: false
+gem "geocoder", "~> 1.8"
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"
