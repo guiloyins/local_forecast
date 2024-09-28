@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Forecasting</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Local Forecasting</h1>
+    <%= render "local_forecasts/search_field" %>
+    <div id='forecast_result'>
+      <%= render "local_forecasts/forecast_data" if @forecast%>
+    </div>
+  </div>
+</body>
+</html>

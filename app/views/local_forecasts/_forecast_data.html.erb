@@ -1,0 +1,25 @@
+<div id="forecast-map" style="height: 400px; width: 100%;"></div>
+
+<script>
+  function initMap() {
+    var forecastLocation = { lat: <%= @forecast[:latitude] %>, lng: <%= @forecast[:longitude] %> };
+    var map = new google.maps.Map(document.getElementById('forecast-map'), {
+      zoom: 8,
+      center: forecastLocation
+    });
+    var marker = new google.maps.Marker({
+      position: forecastLocation,
+      map: map
+    });
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAOi07x9boOYNJHO7FISX8x-GZtY6OcKo&callback=initMap">
+</script>
+
+<div class="forecast-details">
+  <p>Current Temperature: <%= @forecast.dig(:current, :temperature_2m) %>°F</p>
+  <p>Max Temperature: <%= @forecast.dig(:daily, :temperature_2m_max) %>°F</p>
+  <p>Min Temperature: <%= @forecast.dig(:daily, :temperature_2m_min) %>°F</p>
+</div>
