@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.open-meteo.com/v1/forecast/?current%5B%5D=temperature_2m&current%5B%5D=weather_code&daily%5B%5D=temperature_2m_max&daily%5B%5D=temperature_2m_min&forecast_days=1&latitude=40.7128&longitude=-74.006&temperature_unit=fahrenheit&timezone=auto
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Sep 2024 20:33:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6NDAuNzEwMzM1LCJsb25naXR1ZGUiOi03My45OTMwOSwiZ2VuZXJhdGlvbnRpbWVfbXMiOjAuMDQ2MDE0Nzg1NzY2NjAxNTYsInV0Y19vZmZzZXRfc2Vjb25kcyI6LTE0NDAwLCJ0aW1lem9uZSI6IkFtZXJpY2EvTmV3X1lvcmsiLCJ0aW1lem9uZV9hYmJyZXZpYXRpb24iOiJFRFQiLCJlbGV2YXRpb24iOjMyLjAsImN1cnJlbnRfdW5pdHMiOnsidGltZSI6Imlzbzg2MDEiLCJpbnRlcnZhbCI6InNlY29uZHMiLCJ0ZW1wZXJhdHVyZV8ybSI6IsKwRiIsIndlYXRoZXJfY29kZSI6IndtbyBjb2RlIn0sImN1cnJlbnQiOnsidGltZSI6IjIwMjQtMDktMzBUMTY6MzAiLCJpbnRlcnZhbCI6OTAwLCJ0ZW1wZXJhdHVyZV8ybSI6NzEuNywid2VhdGhlcl9jb2RlIjozfSwiZGFpbHlfdW5pdHMiOnsidGltZSI6Imlzbzg2MDEiLCJ0ZW1wZXJhdHVyZV8ybV9tYXgiOiLCsEYiLCJ0ZW1wZXJhdHVyZV8ybV9taW4iOiLCsEYifSwiZGFpbHkiOnsidGltZSI6WyIyMDI0LTA5LTMwIl0sInRlbXBlcmF0dXJlXzJtX21heCI6WzcyLjRdLCJ0ZW1wZXJhdHVyZV8ybV9taW4iOls1OC43XX19
+  recorded_at: Mon, 30 Sep 2024 20:33:34 GMT
+recorded_with: VCR 6.3.1

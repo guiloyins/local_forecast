@@ -10,7 +10,7 @@ RSpec.describe "LocalForecasts", type: :request do
     end
   end
 
-  describe "POST /search" do
+  describe "POST /search", :vcr do
     it "returns http success" do
       post "/local_forecasts/search", as: :turbo_stream, params: {location: "New York"}
       expect(response).to have_http_status(:success)

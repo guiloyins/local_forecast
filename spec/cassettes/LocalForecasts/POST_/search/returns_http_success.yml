@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v1/geocode/search?apiKey=677a3bce830c4e6eacd771c7f05fa961&lang=en&text=New%20York
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Sep 2024 20:34:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-region-code, cf-timezone,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, cf-iplatitude,
+        cf-iplongitude, cf-metro-code, cf-postal-code, cf-region, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Content-Disposition:
+      - inline; filename=response.geojson
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8cb6fe4528b3d1b7-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImRhdGFzb3VyY2UiOnsic291cmNlbmFtZSI6Im9wZW5zdHJlZXRtYXAiLCJhdHRyaWJ1dGlvbiI6IsKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzIiwibGljZW5zZSI6Ik9wZW4gRGF0YWJhc2UgTGljZW5zZSIsInVybCI6Imh0dHBzOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL2NvcHlyaWdodCJ9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIiwic3RhdGUiOiJOZXcgWW9yayIsImNpdHkiOiJOZXcgWW9yayIsImxvbiI6LTc0LjAwNjAxNTIsImxhdCI6NDAuNzEyNzI4MSwic3RhdGVfY29kZSI6Ik5ZIiwicmVzdWx0X3R5cGUiOiJjaXR5IiwiZm9ybWF0dGVkIjoiTmV3IFlvcmssIE5ZLCBVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJhZGRyZXNzX2xpbmUxIjoiTmV3IFlvcmssIE5ZIiwiYWRkcmVzc19saW5lMiI6IlVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImNhdGVnb3J5IjoiYWRtaW5pc3RyYXRpdmUiLCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9OZXdfWW9yayIsIm9mZnNldF9TVEQiOiItMDU6MDAiLCJvZmZzZXRfU1REX3NlY29uZHMiOi0xODAwMCwib2Zmc2V0X0RTVCI6Ii0wNDowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6LTE0NDAwLCJhYmJyZXZpYXRpb25fU1REIjoiRVNUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkVEVCJ9LCJwbHVzX2NvZGUiOiI4N0c3UFg3ViszSCIsInBsdXNfY29kZV9zaG9ydCI6IjdWKzNIIE5ldyBZb3JrLCBOZXcgWW9yaywgVW5pdGVkIFN0YXRlcyIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MS4wMTc1NzY2MTE0NTE4NDYsInBvcHVsYXJpdHkiOjkuNjE1NzkzMDYyNDM1OTA5LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTFkOWQxOTM4ZDYyODA1MmMwNTk1OTM4YTRhYzNhNWI0NDQwZjAwMTAxZjkwMTIxYWYwMjAwMDAwMDAwMDBjMDAyMDgifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstNzQuMDA2MDE1Miw0MC43MTI3MjgxXX0sImJib3giOlstNzQuMjU4ODQzLDQwLjQ3NjU3OCwtNzMuNzAwMjMzLDQwLjkxNzYzXX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sInJlZiI6Ik5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyIsInN0YXRlIjoiTmV3IFlvcmsiLCJsb24iOi03NS44NDQ5OTQ2LCJsYXQiOjQzLjE1NjE2ODEsInN0YXRlX2NvZGUiOiJOWSIsInJlc3VsdF90eXBlIjoic3RhdGUiLCJmb3JtYXR0ZWQiOiJOZXcgWW9yaywgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhIiwiYWRkcmVzc19saW5lMSI6Ik5ldyBZb3JrIiwiYWRkcmVzc19saW5lMiI6IlVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImNhdGVnb3J5IjoiYWRtaW5pc3RyYXRpdmUiLCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9OZXdfWW9yayIsIm9mZnNldF9TVEQiOiItMDU6MDAiLCJvZmZzZXRfU1REX3NlY29uZHMiOi0xODAwMCwib2Zmc2V0X0RTVCI6Ii0wNDowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6LTE0NDAwLCJhYmJyZXZpYXRpb25fU1REIjoiRVNUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkVEVCJ9LCJwbHVzX2NvZGUiOiI4N002NTU0NCtGMiIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC45NjU1ODQ2NDA5MDg5NTc1LCJwb3B1bGFyaXR5IjoyLjExOTkyMDM2ODkyNTMyNDUsImNvbmZpZGVuY2UiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTFmYzEyM2I2NDE0ZjY1MmMwNTlkODE2Zjk1MGZkOTM0NTQwZjAwMTAxZjkwMTg4ZWYwMDAwMDAwMDAwMDBjMDAyMGEifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstNzUuODQ0OTk0Niw0My4xNTYxNjgxXX0sImJib3giOlstNzkuNzYxOTc1OCw0MC40NzY1NzgsLTcxLjc5MDk3Miw0NS4wMTU4NjExXX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sIm5hbWUiOiJOZXcgWW9yayIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMiLCJzdGF0ZSI6IktlbnR1Y2t5IiwiY291bnR5IjoiQmFsbGFyZCBDb3VudHkiLCJjaXR5IjoiTmV3IFlvcmsiLCJoYW1sZXQiOiJOZXcgWW9yayIsImxvbiI6LTg4Ljk1MjU2MjksImxhdCI6MzYuOTg4OTQyOCwic3RhdGVfY29kZSI6IktZIiwicmVzdWx0X3R5cGUiOiJjaXR5IiwiZm9ybWF0dGVkIjoiTmV3IFlvcmsgKE5ldyBZb3JrKSwgS1ksIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImFkZHJlc3NfbGluZTEiOiJOZXcgWW9yayAoTmV3IFlvcmspLCBLWSIsImFkZHJlc3NfbGluZTIiOiJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJjYXRlZ29yeSI6InBvcHVsYXRlZF9wbGFjZSIsInRpbWV6b25lIjp7Im5hbWUiOiJBbWVyaWNhL0NoaWNhZ28iLCJvZmZzZXRfU1REIjoiLTA2OjAwIiwib2Zmc2V0X1NURF9zZWNvbmRzIjotMjE2MDAsIm9mZnNldF9EU1QiOiItMDU6MDAiLCJvZmZzZXRfRFNUX3NlY29uZHMiOi0xODAwMCwiYWJicmV2aWF0aW9uX1NURCI6IkNTVCIsImFiYnJldmlhdGlvbl9EU1QiOiJDRFQifSwicGx1c19jb2RlIjoiODY4SFgyUVcrSFgiLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuNDM3MjkzODM0NjMxNjA2OSwicG9wdWxhcml0eSI6MS40Njk5NzA3OTkzMDY3MDU1LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTE4MmI4NjFjYWY2M2M1NmMwNTlhZGNlN2JhZDk1N2U0MjQwZjAwMTAzZjkwMTliYmMyNzA5MDAwMDAwMDBjMDAyMDg5MjAzMDg0ZTY1NzcyMDU5NmY3MjZiIn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTg4Ljk1MjU2MjksMzYuOTg4OTQyOF19LCJiYm94IjpbLTg4Ljk3MjU2MjksMzYuOTY4OTQyOCwtODguOTMyNTYyOSwzNy4wMDg5NDI4XX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sIm5hbWUiOiJOZXcgWW9yayIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMiLCJzdGF0ZSI6IkZsb3JpZGEiLCJjb3VudHkiOiJTYW50YSBSb3NhIENvdW50eSIsImNpdHkiOiJOZXcgWW9yayIsImhhbWxldCI6Ik5ldyBZb3JrIiwibG9uIjotODcuMjAwODA0OCwibGF0IjozMC44Mzg1MjAyLCJzdGF0ZV9jb2RlIjoiRkwiLCJyZXN1bHRfdHlwZSI6ImNpdHkiLCJmb3JtYXR0ZWQiOiJOZXcgWW9yayAoTmV3IFlvcmspLCBGTCwgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhIiwiYWRkcmVzc19saW5lMSI6Ik5ldyBZb3JrIChOZXcgWW9yayksIEZMIiwiYWRkcmVzc19saW5lMiI6IlVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImNhdGVnb3J5IjoicG9wdWxhdGVkX3BsYWNlIiwidGltZXpvbmUiOnsibmFtZSI6IkFtZXJpY2EvQ2hpY2FnbyIsIm9mZnNldF9TVEQiOiItMDY6MDAiLCJvZmZzZXRfU1REX3NlY29uZHMiOi0yMTYwMCwib2Zmc2V0X0RTVCI6Ii0wNTowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6LTE4MDAwLCJhYmJyZXZpYXRpb25fU1REIjoiQ1NUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkNEVCJ9LCJwbHVzX2NvZGUiOiI4NjJKUlFRWCtDTSIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC4zMzMzNDMzMzMzMzMzMzMzLCJwb3B1bGFyaXR5IjoxLjUxMjk5MzgzMDE2NzgwODUsImNvbmZpZGVuY2UiOjEsImNvbmZpZGVuY2VfY2l0eV9sZXZlbCI6MSwibWF0Y2hfdHlwZSI6ImZ1bGxfbWF0Y2gifSwicGxhY2VfaWQiOiI1MTRmMzg2MGZjZDljYzU1YzA1OTBmMDk4NDQyYTlkNjNlNDBmMDAxMDNmOTAxYTkzMzI2MDkwMDAwMDAwMGMwMDIwODkyMDMwODRlNjU3NzIwNTk2ZjcyNmIifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODcuMjAwODA0OCwzMC44Mzg1MjAyXX0sImJib3giOlstODcuMjIwODA0OCwzMC44MTg1MjAyLC04Ny4xODA4MDQ4LDMwLjg1ODUyMDJdfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkYXRhc291cmNlIjp7InNvdXJjZW5hbWUiOiJvcGVuc3RyZWV0bWFwIiwiYXR0cmlidXRpb24iOiLCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycyIsImxpY2Vuc2UiOiJPcGVuIERhdGFiYXNlIExpY2Vuc2UiLCJ1cmwiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQifSwibmFtZSI6Ik5ldyBZb3JrIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyIsInN0YXRlIjoiTWlzc291cmkiLCJjb3VudHkiOiJDYWxkd2VsbCBDb3VudHkiLCJjaXR5IjoiTmV3IFlvcmsiLCJoYW1sZXQiOiJOZXcgWW9yayIsImxvbiI6LTkzLjkyNjg4MzYsImxhdCI6MzkuNjg1Mjg3NCwic3RhdGVfY29kZSI6Ik1PIiwicmVzdWx0X3R5cGUiOiJjaXR5IiwiZm9ybWF0dGVkIjoiTmV3IFlvcmsgKE5ldyBZb3JrKSwgTU8sIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImFkZHJlc3NfbGluZTEiOiJOZXcgWW9yayAoTmV3IFlvcmspLCBNTyIsImFkZHJlc3NfbGluZTIiOiJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJjYXRlZ29yeSI6InBvcHVsYXRlZF9wbGFjZSIsInRpbWV6b25lIjp7Im5hbWUiOiJBbWVyaWNhL0NoaWNhZ28iLCJvZmZzZXRfU1REIjoiLTA2OjAwIiwib2Zmc2V0X1NURF9zZWNvbmRzIjotMjE2MDAsIm9mZnNldF9EU1QiOiItMDU6MDAiLCJvZmZzZXRfRFNUX3NlY29uZHMiOi0xODAwMCwiYWJicmV2aWF0aW9uX1NURCI6IkNTVCIsImFiYnJldmlhdGlvbl9EU1QiOiJDRFQifSwicGx1c19jb2RlIjoiODZGOE0zUEYrNDYiLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuMzMzMzQzMzMzMzMzMzMzMywicG9wdWxhcml0eSI6MS40MzE1NDM3MDA4OTgyMDM1LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTFiODRjOTcwZjUyN2I1N2MwNTkzMWFlNWQ3ZmI3ZDc0MzQwZjAwMTAzZjkwMTliNjEwZTA5MDAwMDAwMDBjMDAyMDg5MjAzMDg0ZTY1NzcyMDU5NmY3MjZiIn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTkzLjkyNjg4MzYsMzkuNjg1Mjg3NF19LCJiYm94IjpbLTkzLjk0Njg4MzYsMzkuNjY1Mjg3NCwtOTMuOTA2ODgzNiwzOS43MDUyODc0XX1dLCJxdWVyeSI6eyJ0ZXh0IjoiTmV3IFlvcmsiLCJwYXJzZWQiOnsic3RhdGUiOiJuZXcgeW9yayIsImV4cGVjdGVkX3R5cGUiOiJ1bmtub3duIn19fQ==
+  recorded_at: Mon, 30 Sep 2024 20:34:22 GMT
+- request:
+    method: get
+    uri: https://api.open-meteo.com/v1/forecast/?current%5B%5D=temperature_2m&current%5B%5D=weather_code&daily%5B%5D=temperature_2m_max&daily%5B%5D=temperature_2m_min&forecast_days=1&latitude=40.7127281&longitude=-74.0060152&temperature_unit=fahrenheit&timezone=auto
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Sep 2024 20:34:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6NDAuNzEwMzM1LCJsb25naXR1ZGUiOi03My45OTMwOSwiZ2VuZXJhdGlvbnRpbWVfbXMiOjAuMDQ3MDg3NjY5MzcyNTU4NTk0LCJ1dGNfb2Zmc2V0X3NlY29uZHMiOi0xNDQwMCwidGltZXpvbmUiOiJBbWVyaWNhL05ld19Zb3JrIiwidGltZXpvbmVfYWJicmV2aWF0aW9uIjoiRURUIiwiZWxldmF0aW9uIjozMi4wLCJjdXJyZW50X3VuaXRzIjp7InRpbWUiOiJpc284NjAxIiwiaW50ZXJ2YWwiOiJzZWNvbmRzIiwidGVtcGVyYXR1cmVfMm0iOiLCsEYiLCJ3ZWF0aGVyX2NvZGUiOiJ3bW8gY29kZSJ9LCJjdXJyZW50Ijp7InRpbWUiOiIyMDI0LTA5LTMwVDE2OjMwIiwiaW50ZXJ2YWwiOjkwMCwidGVtcGVyYXR1cmVfMm0iOjcxLjcsIndlYXRoZXJfY29kZSI6M30sImRhaWx5X3VuaXRzIjp7InRpbWUiOiJpc284NjAxIiwidGVtcGVyYXR1cmVfMm1fbWF4IjoiwrBGIiwidGVtcGVyYXR1cmVfMm1fbWluIjoiwrBGIn0sImRhaWx5Ijp7InRpbWUiOlsiMjAyNC0wOS0zMCJdLCJ0ZW1wZXJhdHVyZV8ybV9tYXgiOls3Mi40XSwidGVtcGVyYXR1cmVfMm1fbWluIjpbNTguN119fQ==
+  recorded_at: Mon, 30 Sep 2024 20:34:23 GMT
+recorded_with: VCR 6.3.1
