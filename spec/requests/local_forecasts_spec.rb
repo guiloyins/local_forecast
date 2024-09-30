@@ -18,12 +18,12 @@ RSpec.describe "LocalForecasts", type: :request do
 
     it "returns http unprocessable entity" do
       post "/local_forecasts/search", as: :turbo_stream, params: {location: ""}
-      expect(response).to have_http_status(:unprocessable_entity)
+      expect(flash[:alert]).to eq("Location cannot be blank")
     end
 
     it "returns http unprocessable entity" do
       post "/local_forecasts/search", as: :turbo_stream, params: {location: "qqqqqqqqqqqqqqqq"}
-      expect(response).to have_http_status(:unprocessable_entity)
+      expect(flash[:alert]).to eq("Location not found")
     end
   end
 end

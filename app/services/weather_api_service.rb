@@ -7,7 +7,7 @@ class WeatherApiService
       query: {
         latitude: location[0],
         longitude: location[1],
-        current: "temperature_2m",
+        current: %w[temperature_2m weather_code],
         daily: %w[temperature_2m_max temperature_2m_min],
         timezone: "auto",
         temperature_unit: "fahrenheit",

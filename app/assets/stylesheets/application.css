@@ -53,3 +53,18 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+.forecast-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.forecast-details .left,
+.forecast-details .right {
+  width: 45%;
+}
+.forecast-details p {
+  margin: 5px 0;
+}

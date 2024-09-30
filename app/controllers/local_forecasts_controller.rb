@@ -28,6 +28,14 @@ class LocalForecastsController < ApplicationController
   private
 
   def invalid_location
-    redirect_to local_forecasts_index_path, alert: "Location cannot be blank"
+    flash.now[:alert] = "Location cannot be blank"
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream: turbo_stream.prepend(
+          "flash-message",
+          partial: "layouts/flash"
+        )
+      end
+    end
   end
 end
