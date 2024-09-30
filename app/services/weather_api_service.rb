@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WeatherApiService
   include HTTParty
   base_uri "https://api.open-meteo.com/v1/forecast"
