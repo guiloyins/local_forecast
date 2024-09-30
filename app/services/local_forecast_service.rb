@@ -8,6 +8,8 @@ class LocalForecastService
 
     # call the location API to get the coordinates and the postal code
     geocode_result = Geocoder.search(@location)
+    return nil if geocode_result.blank?
+
     coordinates = geocode_result.first.coordinates
     postal_code = geocode_result.first.postal_code
 

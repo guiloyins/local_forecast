@@ -10,23 +10,24 @@ class LocalForecastsController < ApplicationController
     @forecast = LocalForecastService.new(@location).call&.deep_symbolize_keys
     if @forecast
       respond_to do |format|
-        format.turbo_stream do
-          render turbo_stream: [
-            turbo_stream.replace(
-              "search_forecast",
-              partial: "search_field",
-              locals: {forecast: @forecast}
-            ),
-            turbo_stream.replace("forecast_result", partial: "forecast_data", locals: {forecast: @forecast})
-          ]
-        end
+        format.turbo_stream
       end
     else
-      render :index, alert: "Location not found", status: :unprocessable_entity
+      flash.now[:alert] = "Location not found"
+      respond_to do |format|
+        format.turbo_stream do
+          render turbo_stream: turbo_stream.prepend(
+            "flash-message",
+            partial: "layouts/flash"
+          )
+        end
+      end
     end
   end
 
+  private
+
   def invalid_location
-    render :index, alert: "Location cannot be blank", status: :unprocessable_entity
+    redirect_to local_forecasts_index_path, alert: "Location cannot be blank"
   end
 end

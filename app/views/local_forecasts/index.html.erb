@@ -10,8 +10,8 @@
   <div class="container">
     <h1>Local Forecasting</h1>
     <%= render "local_forecasts/search_field" %>
+    <div class="flash" id="flash-message"></div>
     <div id='forecast_result'>
-      <%= render "local_forecasts/forecast_data" if @forecast%>
     </div>
   </div>
 </body>
