@@ -3,6 +3,7 @@
 require "rails_helper"
 
 RSpec.describe LocalForecastsHelper, type: :helper do
+  # this was added by AI
   describe "#weather_code_to_weather" do
     it "returns 'Clear sky' for code 0" do
       expect(helper.weather_code_to_weather(0)).to eq("Clear sky")
